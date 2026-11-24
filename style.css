@@ -1,0 +1,119 @@
+@font-face {
+  font-family: 'MexicanaHollow';
+  src: url('MexicanaHollow.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+html, body {
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    background-color: #111111;
+    color: #eeeeee;
+    min-height: 100vh;
+    display: grid;
+    place-items: center;
+}
+h1 {
+    font-family: 'MexicanaHollow';
+    font-size: 250%;
+}
+h3 {
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.button {
+    margin-top: 1%;
+    padding: 1.5%;
+    padding-left: 2%;
+    padding-right: 2%;
+    margin: 1%;
+    background-color: #202020;
+    border-radius: 999999px;
+    border: 0.2em solid #d5d5d5;
+    color:#eeeeee;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 120%;
+}
+.button:hover {
+    border-color:#eeeeee
+}
+.button:active {
+    border-color:#ffffff
+}
+#regular-button {
+    margin-top: 3vh;
+}
+#answer-box {
+    font-family:'Franklin Gothic Medium';
+}
+.hidden {
+    display: none;
+}
+input {
+    height: 48px;
+    width: 280px;
+    border: 1px solid #545454;
+    border-radius: 4px;
+    box-sizing: border-box;
+    padding: 16px;
+    background-color: #111111;
+}
+input:focus {
+  outline: none;
+  border: 2px solid #eeeeee;
+}
+#answer-label #answer-field-text, input:focus {
+    transition: all 0.15s ease-out;
+}
+input:focus + #answer-label #answer-field-text, :not(:placeholder-shown) + #answer-label #answer-field-text {
+  font-size: 12px;
+  transform: translate(0, -160%);
+  background-color: #111111;
+  padding-left: 4px;
+  padding-right: 4px;
+}
+input, textarea {
+    color: #eeeeee;
+}
+input:focus + #answer-label #answer-field-text {
+    color: #eeeeee;
+}
+#answer-box {
+    position: relative;
+    width: fit-content;
+    margin: 0 auto;
+}
+#answer-label {
+    position: absolute;
+    color: #545454;
+    top: 0;
+    bottom: 0;
+    left: 16px;
+    display: flex;
+    align-items: center;
+    pointer-events: none;
+}
+#question-div {
+    width: 65vw;
+}
+#neighbor {
+    position: absolute;
+    pointer-events: none;
+}
+#skeleton {
+    position: absolute;
+    width: 100dvw;
+    height: 80dvh;
+    pointer-events: none;
+}
+#fade-image {
+    position: absolute;
+    width: 100dvw;
+    height: 100dvh;
+    pointer-events: none;
+}
+#mexican-verity {
+    width: 357px;
+    height: 309px;
+}
